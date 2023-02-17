@@ -2,12 +2,18 @@
     padding: 0;
     margin: 0;
 }
+body{
+    overflow-x: hidden;
+}
+/* -------------------------------------------navbar------------------------------------------------*/
 ::selection {
     color:floralwhite;
     background: #00b39b;
   }
+  
 .bar{
-    background-color: #fff;
+    
+    background-color:#fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -19,15 +25,19 @@
     z-index: 3;
     box-shadow: 0 1px 4px -2px rgb(184, 181, 181);
 }
+.nav-list{
+    
 
-nav ul{
+}
+
+/*nav ul{
 
     display: flex;
     justify-content: space-between;
 
     
 
-}
+}*/
 .section1{
     margin-top: 80px;
 }
@@ -92,6 +102,7 @@ ul li:hover ul.dropdown{
 .career:hover{
     color: #00b39b;
 }
+/* -------------------------------------------section1------------------------------------------------*/
 h1{
     text-align: center;
     padding-top: 50px;
@@ -121,6 +132,7 @@ h1{
     font-size:20px ;
     font-weight:300;
 }
+/* -------------------------------------------section2------------------------------------------------*/
 .section2{
     
     display: flex;
@@ -169,6 +181,7 @@ h2{
     font-weight: 400;
     font-family: Arial, sans-serif ;
 }
+
 h3{
     position: relative;
     font-size: 1.125em;
@@ -236,6 +249,7 @@ h3{
     border-bottom: 1px solid #fff ;
     
 }
+/* -------------------------------------------section3------------------------------------------------*/
 .section3{
     display: flex;
     justify-content: space-between;
@@ -248,6 +262,7 @@ h3{
     font-weight:300;
 
 }
+
 h4{
     text-align:start;
     color: #00b39b;
@@ -272,6 +287,7 @@ h4{
 .child6{
     margin-top: -15px;
 }
+
 .icon a img{
     opacity: 0.7;
     filter: grayscale(100%);
@@ -280,8 +296,9 @@ h4{
 .icon a img:hover{
     opacity:1;
     filter: grayscale(0%);
-
 }
+
+/* -------------------------------------------section4------------------------------------------------*/
 h5{
     text-align:start;
     color: #00b39b;
@@ -376,6 +393,8 @@ h5{
     row-gap: 20px;
 
 }
+
+
 .img-back{
     position:absolute;
     padding-top: 50px;
@@ -383,7 +402,7 @@ h5{
     transform: translate(5%,6.5%);
     clip: rect(0px/*left */,540px /*right */,360px /*bot */,0px/*top*/);
 }
-
+/* -------------------------------------------section5------------------------------------------------*/
 .section5{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -406,13 +425,14 @@ h6{
     padding-right: 400px;
 
 }
+/* -------------------------------------------section6------------------------------------------------*/
 .box-flex{
     display: flex;
     justify-content: space-around;
     column-gap:120px;
  
-
 }
+
 .box-section6{
     
     display: flex;
@@ -421,7 +441,7 @@ h6{
     width:320px;
     padding-bottom: 10px;
 }
-.parg-section7{
+.parg-section6{
     color: gray;
     font-size:1.125rem ;
 }
@@ -451,6 +471,7 @@ h6{
     box-shadow: 5px 10px 8px #cacaca;
     
 }
+/* -------------------------------------------section7------------------------------------------------*/
 .h-section7{
     font-size:1.725rem  ;
     font-family:Arial, Helvetica, sans-serif;
@@ -481,7 +502,8 @@ h6{
 .line-1 {
     height: 1px;
     background: rgb(231, 226, 226);
-  }
+}
+/* -------------------------------------------footer------------------------------------------------*/
 footer{
     margin-left: 150px;
     margin-right: 150px;
@@ -499,4 +521,59 @@ footer{
 span{
     color: #3d83df;
 }
+/* ------------------------------------Responsive Web Design - Media Queries------------------------------------------------*/
 
+@media (max-width :500px){
+
+    .bar{
+     flex-direction: column;
+     height: 150px;
+
+    }
+    .dropdown{
+        margin-left: 1px;
+        margin-right: 12px;
+        padding: 1px 1px;
+
+    }
+/*-----------------------------------------section1-----------------------------------------*/
+.center-media{
+    text-align: center;
+}
+.section1 h1 ,.section1 .img2 {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    font-size:1.725rem;
+    margin: auto;    
+
+}
+
+.parg-flex{
+    margin: auto;
+    width: 100%;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+
+}
+/*-----------------------------------------section2-----------------------------------------*/
+.section2{
+    display: flex;
+    flex-direction: column;
+}
+/*-----------------------------------------section3-----------------------------------------*/
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+/*-----------------------------------------section4-----------------------------------------*/
+.section4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
